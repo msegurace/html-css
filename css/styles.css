@@ -91,6 +91,11 @@ h2:after {
     flex: 1 0 20px;
 }
 
+.noline {
+    font-size: 3rem;
+    font-weight: 900;
+    width: 100vw;
+}
 h3 {
     font-size: 3.2rem;
     font-weight: 900;
@@ -464,6 +469,12 @@ footer{grid-area: footer;}
 .latest-meals a:visited {
     text-decoration: none;
 }
+
+.latest-meals a:hover {
+    color: var(--color-principal);
+    opacity: 0.5;
+}
+
 @media (max-width: 480px){
     .latest-meals img {
         width: 190px;
@@ -679,6 +690,7 @@ aside {
 }
 .shop-items a:hover {
     color: var(--color-principal-light);
+    opacity: 0.5;
 }
 
 @media (min-width: 480px){
@@ -733,6 +745,7 @@ fieldset p{
     position: relative;
     margin-top: 20px;
 }
+
 .search input {
     padding-top: 10px;
     padding-left: 40px;
@@ -742,10 +755,12 @@ fieldset p{
     font-size: 1.5rem;
     width: 145px;
 }
+
 .search img {
     position: absolute;
     top: 35px;
 }
+
 .icon {
     padding: 10px;
     min-width: 16px;
@@ -813,6 +828,9 @@ video-items {
     margin-bottom: 20px;
 }
 
+iframe {
+    border: 0px;
+}
 
 .texto-videos {
     background-color: var(--color-texto);
@@ -847,14 +865,17 @@ video-items {
         height: calc((var(--widthIframe) * 9) / 16);
         margin: 0 auto;
     }
+    .texto-videos {
+        text-align: left;
+    }
 }
 
 @media (min-width: 480px) {
     .video-items div  {
-        width: calc(25vw - 10px);
+        width: 490px;
     }
     iframe {
-        --widthIframe: calc(25vw - 10px);
+        --widthIframe: 490px;
         width: var(--widthIframe);
         height: calc((var(--widthIframe) * 9) / 16);
 
